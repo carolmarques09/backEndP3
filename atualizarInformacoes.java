@@ -9,3 +9,5 @@ public void atualizarInformacoes(DadosAtualizacaoMedico dados) {
     this.endereco.atualizarInformacoes(dados.endereco());
   }
 }
+
+// Colocar em DadosEndereco
