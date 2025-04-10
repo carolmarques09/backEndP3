@@ -8,3 +8,5 @@ public record DadosListagemMedico(Long id, String nome, String email, String crm
         this(medico.getId(), medico.getNome(), medico.getEmail(), medico.getCrm(), medico.getEspecialidade());
     }
 }
+
+// no Insomnia, colocar o id e o nome da paciente como 12 e Ana Maria Luiza Carlos, a resposta tem que dar 200. 
