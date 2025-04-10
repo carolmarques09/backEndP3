@@ -9,4 +9,4 @@ public record DadosListagemMedico(Long id, String nome, String email, String crm
     }
 }
 
-// no Insomnia, colocar o id e o nome da paciente como 12 e Ana Maria Luiza Carlos, a resposta tem que dar 200. 
+// no Insomnia, colocar o id e o nome da médica como 12 e Ana Maria Luiza Carlos, a resposta tem que dar 200. 
