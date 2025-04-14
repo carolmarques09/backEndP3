@@ -1,5 +1,7 @@
 package med.voll.api.medico;
 
+import med.voll.api.endereco.DadosEndereco;
+
 public class Endereco {
     private String logradouro;
     private String bairro;
@@ -9,7 +11,10 @@ public class Endereco {
     private String cidade;
     private String uf;
 
-    public void atualizarInformacoes(DadosEndereco endereco) {
+    public Endereco(DadosEndereco endereco) {
+    }
+
+    public void atualizarInformacoes(DadosEndereco dados) {
         if (dados.logradouro() != null) {
             this.logradouro = dados.logradouro();
         }
@@ -21,14 +26,15 @@ public class Endereco {
         }
         if (dados.uf() != null) {
             this.uf = dados.uf();
-        if (dados.cidade() != null) {
-            this.cidade = dados.cidade();
-        }
-        if (dados.numero() != null) {
-            this.numero = dados.numero();
-        }
-        if (dados.complemento() != null) {
-            this.complemento = dados.complemento();
+            if (dados.cidade() != null) {
+                this.cidade = dados.cidade();
+            }
+            if (dados.numero() != null) {
+                this.numero = dados.numero();
+            }
+            if (dados.complemento() != null) {
+                this.complemento = dados.complemento();
+            }
         }
     }
 }
