@@ -74,4 +74,10 @@ public class Medico {
     public void excluir() {
         this.ativo = false;
     }
+
+    public String getTelefone() {
+    }
+
+    public String getEndereco() {
+    }
 }
